@@ -66,9 +66,17 @@ def valid_date(date):
     logging.info('Validating date!')
     try:
         datetime.datetime.strptime(date, '%Y-%m-%dT%H:%M:%S%fZ')
-        return True
+        flag1 = True
     except:
-        return False
+        flag1 = False
+
+    try:
+        datetime.datetime.strptime(date, '%Y-%m-%dT%H:%M:%S.%fZ')
+        flag2 = True
+    except:
+        flag2 = False
+
+    return flag1 or flag2
 
 
 # функция, определяющая наличие id в базе и его валидность
