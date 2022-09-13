@@ -66,4 +66,4 @@ def elem_history(elem_id):
 
 if __name__ == '__main__':
     logging.info('Run app!')
-    app.run()
+    app.run(host="0.0.0.0", port=80)

@@ -2,7 +2,7 @@
 Тут хранятся все данные для тестирования
 '''
 
-API_BASEURL = "http://127.0.0.1:5000"
+API_BASEURL = "http://0.0.0.0:80"
 
 IMPORT_VALID_DATA = [
     {

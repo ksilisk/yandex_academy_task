@@ -1,8 +1,0 @@
-def main():
-    test_import_valid(IMPORT_VALID_DATA)
-    for key, value in DELETE_DATA.items():
-        delete_node(key, value)
-
-
-if __name__ == "__main__":
-    main()
